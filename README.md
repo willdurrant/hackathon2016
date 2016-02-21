@@ -20,21 +20,26 @@ Install
 
 * Make sure you have a Github account
 * Clone this Github repo - https://github.com/willdurrant/hackathon2016
+
 ```git clone https://github.com/willdurrant/hackathon2016.git```
 
 * Run npm & bower install at root of project
+
 ```npm install```
 ```bower install```
 
 ## To run locally
+
 ```grunt serve```
 ```grunt serve:livereload```
 	
 ## Build a release
 * From project root
+
 ```grunt build```
 
 * Navigate into create dist folder and add & commit
+
 ```cd dist```
 ```git add -A```
 ```git commit -m 'some comment...'```
@@ -42,12 +47,15 @@ Install
 ## Deploy to Openshift	
 	
 * Associate Openshift remote repo with the dist folder
+
 ```git remote add openshift {ssh_url}```
 	
 * Verify remote repos
+
 ```git remote -v```
 
 * Push dist folder to Openshift
+
 ```git push openshift master```
   (might need to do a git pull openshift master first and then redo the grunt build)
 	
@@ -55,10 +63,13 @@ Install
 
 To delete a project on window.
 * Install npm package rimraf globally. This deletes the nested directories in node_modules which Windows has problems with
+
 ```npm install rimraf -g```
 * Delete node_modules directory from project root
+
 ```rimraf node_modules```
 * Then delete project
+
 ```cd ..```
 ```rm -rf hackathon/```
 	
