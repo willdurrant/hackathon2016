@@ -26,11 +26,13 @@ Install
 * Run npm & bower install at root of project
 
 ```npm install```
+
 ```bower install```
 
 ## To run locally
 
 ```grunt serve```
+
 ```grunt serve:livereload```
 	
 ## Build a release
@@ -41,7 +43,9 @@ Install
 * Navigate into create dist folder and add & commit
 
 ```cd dist```
+
 ```git add -A```
+
 ```git commit -m 'some comment...'```
 
 ## Deploy to Openshift	
@@ -71,6 +75,7 @@ To delete a project on window.
 * Then delete project
 
 ```cd ..```
+
 ```rm -rf hackathon/```
 	
 ## Useful resources:
