@@ -37,6 +37,8 @@ Install
     ```grunt serve```
 
     ```grunt serve:livereload```
+
+* Deployed application URL locally - http://localhost:9000/	
 	
 ## Build a release
 * From project root
@@ -65,6 +67,9 @@ Install
 
   ```git push openshift```
 	
+* Deployed application URL on Openshift - http://hackathon-tubcat74.rhcloud.com/
+
+
 ## Miscellaneous
 
 To delete a project on window.
