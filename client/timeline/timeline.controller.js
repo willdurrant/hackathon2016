@@ -14,22 +14,22 @@ angular.module('hackathonApp')
     $scope.events = [{
       badgeClass: 'info',
       badgeIconClass: 'glyphicon-check',
-      title: 'First heading',
+      title: 'Before you go',
       when: '11 hours ago via Twitter',
       content: 'Some awesome content.'
     }, {
       badgeClass: 'warning',
       badgeIconClass: 'glyphicon-credit-card',
-      title: 'Second heading',
+      title: 'Flight from Gatwick',
       when: '12 hours ago via Twitter',
       content: 'More awesome content.'
     }, {
       badgeClass: 'default',
       badgeIconClass: 'glyphicon-credit-card',
-      title: 'Third heading',
+      title: 'Out and about in NYC',
       titleContentHtml: '<img class="img-responsive" src="http://www.freeimages.com/assets/183333/1833326510/wood-weel-1444183-m.jpg">',
       contentHtml: lorem,
-      footerContentHtml: '<a href="/">Continue Reading</a>'
+      footerContentHtml: '<a href="/myoverview">CTA1</a> <a href="/">CTA2</a>'
     }];
 
     $scope.carouselImages = ['../assets/images/image1.jpg','../assets/images/image2.jpg','../assets/images/image3.jpg'];
