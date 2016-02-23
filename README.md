@@ -15,7 +15,10 @@ Install
 
 * Make sure npm is configured for external and bash proxy's aren't set
 * Make sure .bowerrc & .npmrc hasn't any proxy details set
-
+* If using ```yo angular-fullstack:route``` make sure the url is different from the route name
+* When running ```grunt build``` this doesn't copy any new html templates over so you need to manually copy these over into the dist folder
+* To validate a ```grunt build``` you can run the app from the dist folder with the following and then navigate to http://localhost:8080/
+    ```NODE_ENV=production node dist/server/app.js```
 
 ## Contributing
 
@@ -44,6 +47,12 @@ Install
 * From project root
 
     ```grunt build```
+* Have commented out grunt imagemin from Gruntfile.js so images need to be copied manually
+* New .html template files don't seem to be copied during ```grunt build``` so need to be copied manually
+* To verify the build you can run the app from the dist dir
+
+    ```NODE_ENV=production node dist/server/app.js```
+
 
 * Navigate into create dist folder and add & commit
 

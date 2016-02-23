@@ -13,11 +13,11 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
+      <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
       <link rel="stylesheet" href="bower_components/angular-timeline/dist/angular-timeline.css" />
       <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
       <!-- endbower -->
     <!-- endbuild -->
-    <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- build:css({.tmp,client}) app/app.css -->
     <link rel="stylesheet" href="app/app.css">
@@ -26,14 +26,12 @@
       <link rel="stylesheet" href="app/main/main.css">
       <link rel="stylesheet" href="components/modal/modal.css">
       <!-- endinjector -->
-
     <!-- endbuild -->
   </head>
   <body ng-app="hackathonApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div ng-include="'components/navbar/navbar.html'"></div>
 
     <!-- Add your site or application content here -->
     <div ui-view=""></div>
@@ -58,6 +56,8 @@
       <script src="bower_components/jquery/dist/jquery.js"></script>
       <script src="bower_components/angular/angular.js"></script>
       <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/angular-touch/angular-touch.js"></script>
+      <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
       <script src="bower_components/angular-cookies/angular-cookies.js"></script>
       <script src="bower_components/angular-resource/angular-resource.js"></script>
       <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -66,16 +66,12 @@
       <script src="bower_components/lodash/dist/lodash.compat.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
-    <script src="bower_components/angular-touch/angular-touch.min.js"></script>
-    <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
         <!-- build:js({.tmp,client}) app/app.js -->
-
         <script src="app/app.js"></script>
         <script src="timeline/timeline.js"></script>
         <script src="timeline/timeline.controller.js"></script>
         <script src="overview/overview.js"></script>
         <script src="overview/overview.controller.js"></script>
-
           <!-- injector:js -->
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>

@@ -408,7 +408,7 @@ module.exports = function (grunt) {
         }
       },
       dist: [
-        'imagemin',
+        //'imagemin', WD-Commented out as images error - have to manually copy images over to dist dir
         'svgmin'
       ]
     },
