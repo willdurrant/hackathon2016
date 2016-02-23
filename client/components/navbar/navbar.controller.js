@@ -8,7 +8,7 @@ angular.module('hackathonApp')
     },
     {
         'title': 'Timeline',
-        'link': '/timeline'
+        'link': '/mytimeline'
     }];
 
     $scope.isCollapsed = true;

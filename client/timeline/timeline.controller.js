@@ -32,6 +32,5 @@ angular.module('hackathonApp')
       footerContentHtml: '<a href="/myoverview">CTA1</a> <a href="/">CTA2</a>'
     }];
 
-    $scope.carouselImages = ['../assets/images/image1.jpg','../assets/images/image2.jpg','../assets/images/image3.jpg'];
 
   });
