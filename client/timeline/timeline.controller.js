@@ -32,4 +32,6 @@ angular.module('hackathonApp')
       footerContentHtml: '<a href="/">Continue Reading</a>'
     }];
 
+    $scope.carouselImages = ['../assets/images/image1.jpg','../assets/images/image2.jpg','../assets/images/image3.jpg'];
+
   });

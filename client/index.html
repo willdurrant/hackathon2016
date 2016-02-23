@@ -17,6 +17,8 @@
       <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
       <!-- endbower -->
     <!-- endbuild -->
+    <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- build:css({.tmp,client}) app/app.css -->
     <link rel="stylesheet" href="app/app.css">
       <!-- injector:css -->
@@ -24,6 +26,7 @@
       <link rel="stylesheet" href="app/main/main.css">
       <link rel="stylesheet" href="components/modal/modal.css">
       <!-- endinjector -->
+
     <!-- endbuild -->
   </head>
   <body ng-app="hackathonApp">
@@ -62,13 +65,14 @@
       <script src="bower_components/lodash/dist/lodash.compat.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
-
-
+    <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
         <!-- build:js({.tmp,client}) app/app.js -->
 
         <script src="app/app.js"></script>
         <script src="timeline/timeline.js"></script>
         <script src="timeline/timeline.controller.js"></script>
+
           <!-- injector:js -->
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>

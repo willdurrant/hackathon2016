@@ -1,3 +1,5 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
 <div class="col-md-12">
 
   <!-- view -->
@@ -17,5 +19,11 @@
       </timeline-panel>
     </timeline-event>
   </timeline>
+
+  <ul rn-carousel class="image">
+    <li ng-repeat="image in carouselImages">
+      <div class="layer"><img src={{image}}></div>
+    </li>
+  </ul>
 
 </div>
