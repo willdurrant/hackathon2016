@@ -23,8 +23,8 @@ angular.module('hackathonApp')
        title: 'Pets'
        }
      ];
-     $scope.carousel2Images = ['../assets/images/image2.jpg','../assets/images/image3.jpg','../assets/images/image1.jpg'];
-     $scope.carousel3Images = ['../assets/images/image3.jpg','../assets/images/image1.jpg','../assets/images/image2.jpg'];
-     $scope.carousel4Images = ['../assets/images/image1.jpg','../assets/images/image2.jpg','../assets/images/image3.jpg'];
+     $scope.carousel2Images = ['../assets/images/airport_limo_services.jpg','../assets/images/check-in.jpg','../assets/images/Parking.jpg'];
+     $scope.carousel3Images = ['../assets/images/travel-visa1.jpg','../assets/images/visa.jpg','../assets/images/Shopping.jpg'];
+     $scope.carousel4Images = ['../assets/images/lounge.jpg','../assets/images/Hotel-Check-In-620x480.jpg','../assets/images/IMG_5017.jpg'];
 
   });
