@@ -5,11 +5,12 @@ angular.module('hackathonApp', [
   'ngResource',
   'ngSanitize',
   'ui.router',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'angular-timeline'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider
-      .otherwise('/');
+      .otherwise('/timeline');
 
     $locationProvider.html5Mode(true);
   });

@@ -2,6 +2,7 @@
 
 angular.module('hackathonApp')
   .controller('MainCtrl', function ($scope, $http) {
+    console.log('MainCtrl called..');
     $scope.awesomeThings = [];
 
     $http.get('/api/things').success(function(awesomeThings) {
