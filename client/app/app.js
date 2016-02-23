@@ -10,7 +10,7 @@ angular.module('hackathonApp', [
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider
-      .otherwise('/timeline');
+      .otherwise('/');
 
     $locationProvider.html5Mode(true);
   });
