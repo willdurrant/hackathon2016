@@ -32,5 +32,28 @@ angular.module('hackathonApp')
       footerContentHtml: '<a href="/myoverview">CTA1</a> <a href="/">CTA2</a>'
     }];
 
+    $scope.leg = {
+      'legName': 'Home to New York',
+      'legStartDate': '10-Mar-2016',
+      'legEndDate': '17-Mar-2016',
+      'stages': [
+        {'stageName': 'Getting There',
+          badgeClass: 'warn',
+          badgeIconClass: 'glyphicon-check',
+          footerContentHtml: '<a href="/myoverview">Details</a>'
+        },
+        {'stageName': 'Out & About',
+          badgeClass: 'info',
+          badgeIconClass: 'glyphicon-check',
+          footerContentHtml: '<a href="/myoverview">Details</a>'
+        },
+        {'stageName': 'Coming Home',
+          badgeClass: 'info',
+          badgeIconClass: 'glyphicon-check',
+          footerContentHtml: '<a href="/myoverview">Details</a>'
+        }
+      ]
+    };
+
 
   });
