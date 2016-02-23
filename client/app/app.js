@@ -6,6 +6,7 @@ angular.module('hackathonApp', [
   'ngSanitize',
   'ui.router',
   'ui.bootstrap',
+  'hackathonApp.services',
   'angular-timeline',
   'angular-carousel'
 ])
