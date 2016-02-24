@@ -42,7 +42,6 @@ angular.module('hackathonApp')
     //
     //}
 
-    
 
     $scope.showError = function () {
       notifications.showError('Oops! Something bad just happened!');

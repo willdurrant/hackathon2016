@@ -5,26 +5,52 @@ angular.module('hackathonApp')
 
      $scope.carousel1Images = [
        { src: '../assets/images/visa.jpg',
-       title: 'Visa requirements'
+         title: 'Visa',
+         link: '../assets/images/boardingPass.png'
+       },
+       {
+         src: '../assets/images/insurance.jpg',
+         title: 'Insurance',
+         link: '/myinsurance'
        },
        { src: '../assets/images/FX.jpg',
-       title: 'Organise currency'
+       title: 'Money'
        },
        {
        src: '../assets/images/imgres.png',
-       title: 'Inoculatiion'
-       },
-       {
-       src: '../assets/images/insurance.jpg',
-       title: 'Insurance'
+       title: 'Health'
        },
        {
        src: '../assets/images/pets.jpg',
        title: 'Pets'
        }
      ];
-     $scope.carousel2Images = ['../assets/images/airport_limo_services.jpg','../assets/images/check-in.jpg','../assets/images/Parking.jpg'];
-     $scope.carousel3Images = ['../assets/images/travel-visa1.jpg','../assets/images/visa.jpg','../assets/images/Shopping.jpg'];
-     $scope.carousel4Images = ['../assets/images/lounge.jpg','../assets/images/Hotel-Check-In-620x480.jpg','../assets/images/IMG_5017.jpg'];
+
+    $scope.carousel2Images = [
+      {src: '../assets/images/traffic-jam.jpg',
+        title: 'Travel Updates'},
+      {src: '../assets/images/nycairportlimos.jpg',
+        title: 'Transfers'}];
+
+
+     $scope.carousel3Images = [
+       {src: '../assets/images/check-in.jpg',
+         title: 'Check In',
+       link:'/myboarding'},
+       {src: '../assets/images/check-in.jpg',
+         title: 'Fast-Track'},
+       {src: '../assets/images/check-in.jpg',
+         title: 'Lounge Access'},
+       {src: '../assets/images/airport_limo_services.jpg',
+         title: 'Shopping'}];
+
+    $scope.carousel4Images = [
+      {src: '../assets/images/airport-pickup.jpg',
+        title: 'Hotel Pickup'},
+      {src: '../assets/images/check-in.jpg',
+        title: 'Hotel Check-In'},
+      {src: '../assets/images/check-in.jpg',
+        title: 'Lounge Access'}];
+
 
   });

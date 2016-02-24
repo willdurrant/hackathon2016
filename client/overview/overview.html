@@ -1,33 +1,46 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
 <div class="col-md-12 overview">
-    <ul rn-carousel class="image">
-        <li ng-repeat="image in carousel1Images">
-            <div class="layer">
-                <img src={{image.src}}>
-            </div>
-            <h3>{{image.title}}</h3>
-        </li>
-    </ul>
-    <h2>Before you go</h2>
-    <ul rn-carousel class="image">
-        <li ng-repeat="image in carousel2Images">
-            <div class="layer"><img src={{image}}></div>
-        </li>
-    </ul>
-    <h2>On the way</h2>
-    <ul rn-carousel class="image">
-        <li ng-repeat="image in carousel3Images">
-            <div class="layer">
-                <img src={{image}}>
-            </div>
-        </li>
-    </ul>
-    <h2>At the airport</h2>
-    <ul rn-carousel class="image">
-        <li ng-repeat="image in carousel4Images">
-            <div class="layer"><img src={{image}}></div>
-        </li>
-    </ul>
-    <h2>Get to hotel</h2>
+
+  <ul rn-carousel class="image">
+    <li ng-repeat="image in carousel1Images">
+      <div class="layer">
+        <a href="{{image.link}}"><img src={{image.src}}></a>
+      </div>
+      <h3>{{image.title}}</h3>
+    </li>
+  </ul>
+  <h2>Before you go</h2>
+
+  <ul rn-carousel class="image">
+    <li ng-repeat="image in carousel2Images">
+      <div class="layer">
+        <a href="{{image.link}}"><img src={{image.src}}></a>
+      </div>
+      <h3>{{image.title}}</h3>
+    </li>
+  </ul>
+  <h2>On the way</h2>
+
+  <ul rn-carousel class="image">
+    <li ng-repeat="image in carousel3Images">
+      <div class="layer">
+        <a href="{{image.link}}"><img src={{image.src}}></a>
+      </div>
+      <h3>{{image.title}}</h3>
+    </li>
+  </ul>
+  <h2>At the airport</h2>
+
+  <ul rn-carousel class="image">
+    <li ng-repeat="image in carousel4Images">
+      <div class="layer">
+        <a href="{{image.link}}"><img src={{image.src}}></a>
+      </div>
+      <h3>{{image.title}}</h3>
+    </li>
+  </ul>
+  <h2>Get to hotel</h2>
+  <br/>
+  <br/>
 </div>

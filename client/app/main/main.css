@@ -11,7 +11,7 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, table,
 caption, tbody, tfoot, thead, tr, th, td {
-margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+  margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 body { line-height: 1; }
 ul { list-style: none; }
 blockquote, q { quotes: none; }
@@ -26,42 +26,46 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 
 body {
-    position: relative;
+  position: relative;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .thing-form {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 #banner {
-    border-bottom: none;
-    margin-top: -20px;
-    height: 0;
-    padding-bottom: 40%;
+  border-bottom: none;
+  margin-top: -20px;
+  height: 0;
+  padding-bottom: 66%;
 }
 
 #banner h1 {
-    font-size: 30px;
-    color: #333;
-    line-height: 1;
-    font-weight: normal;
-    letter-spacing: -1px;
-    background: rgba(248,245,228,0.8);
-    border-radius: 3px;
-    padding: 10px;
+  font-size: 25px;
+  color: #333;
+  line-height: 1;
+  font-weight: normal;
+  letter-spacing: -1px;
+  background: rgba(248,245,228,1);
+  border-radius: 3px;
+  padding: 30px 10px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 .hero-unit {
-    position: relative;
-    padding: 30px 15px;
+  position: relative;
+  padding: 30px 15px;
 
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    background: #4393B9;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  background: #4393B9;
 }
 
 .hero-unit#banner {
@@ -69,125 +73,160 @@ body {
   background-size: cover;
 }
 
+.boarding {
+  background: #fff url(../../../assets/images/boardingPass.png) no-repeat center -55px;
+  background-size: 100% auto;
+  height: 0px;
+  padding-bottom: 180%;
+  width: 100%;
+}
+
 .footer {
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 70px;
-    border-top: 1px solid #E5E5E5;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 70px;
+  border-top: 1px solid #E5E5E5;
 }
 
 .navbar-text {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 ul[rn-carousel] {
-    width: 100%;
-    height: 0;
-    padding-bottom: 50%;
-    margin-bottom: 0;
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  margin-bottom: 0;
 }
 
 ul[rn-carousel] img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    height: auto;
+  width: 100%;
+  height: auto;
+  position: relative;
+  height: auto;
 }
 
 ul[rn-carousel] h3 {
-    position: absolute;
-    top: 0px;
-    color: #fff;
-    text-align: left;
-    padding: 5px;
-    background-color: green;
+  position: absolute;
+  top: 0px;
+  color: #fff;
+  text-align: left;
+  padding: 5px;
+  background-color: green;
 }
 
 ul[rn-carousel] li:after {
-    width: 34px;
-    height: 34px;
-    content: '>';
-    position: absolute;
-    top: 41%;
-    right: 10px;
-    color: #fff;
-    font-size: 38px;
-    line-height: 29px;
-    text-align: center;
-    font-family: Arial Narrow;
+  width: 34px;
+  height: 34px;
+  content: '>';
+  position: absolute;
+  top: 41%;
+  right: 10px;
+  color: #fff;
+  font-size: 38px;
+  line-height: 29px;
+  text-align: center;
+  font-family: Arial Narrow;
 }
 
 ul[rn-carousel] li:before {
-    width: 34px;
-    height: 34px;
-    content: '<';
-    position: absolute;
-    top: 41%;
-    color: #fff;
-    font-size: 38px;
-    line-height: 29px;
-    text-align: center;
-    font-family: Arial Narrow;
-    left: 7px;
-    z-index: 999;
+  width: 34px;
+  height: 34px;
+  content: '<';
+  position: absolute;
+  top: 41%;
+  color: #fff;
+  font-size: 38px;
+  line-height: 29px;
+  text-align: center;
+  font-family: Arial Narrow;
+  left: 7px;
+  z-index: 999;
 }
 
 
 .navbar-default .navbar-brand {
-    font-size: 30px;
-    text-transform: lowercase;
-    color: #002663;
+  font-size: 30px;
+  text-transform: lowercase;
+  color: #002663;
 }
 
 .navbar-brand span, .page-header, h2 {
-    color: green;
+  color: green;
 }
 
 .navbar-default .navbar-toggle .icon-bar{
- background-color: green;
- }
+  background-color: green;
+}
 
 .overview h2 {
-    background-color: #eaeaea;
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 18px;
-    border-top: 2px solid #333;
+  background-color: #eaeaea;
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-top: 2px solid #333;
 }
 
 .footerlinks {
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: #e8e8e8;
-    border-top: 1px solid #ccc;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #e8e8e8;
+  border-top: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
 }
 
 .footerlinks li {
-    width: 32%;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
+  width: 32%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
 }
 
 .footerlinks li a {
-    width: 100%;
-    display: block;
-    text-align: center;
-    height: 80px;
-    border: none;
-    color: #002663;
+  width: 100%;
+  display: block;
+  text-align: center;
+  height: 80px;
+  border: none;
+  color: #002663;
+  text-decoration: none;
 }
 
 .footerlinks span {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    display: block;
-    font-size: 29px;
-    color: green;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 29px;
+  color: green;
 }
+
+.static {
+  padding: 20px;
+}
+
+.static h1 {
+  font-size: 30px;
+  color: green;
+  margin-bottom: 20px;
+}
+
+.static h2 {
+  font-size: 18px;
+  color: green;
+  margin-bottom: 20px;
+}
+
+.static h3, .static h4 {
+  font-weight: bold;
+}
+
+.static p {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+

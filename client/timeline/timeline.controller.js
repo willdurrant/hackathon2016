@@ -33,7 +33,7 @@ angular.module('hackathonApp')
     }];
 
     $scope.leg = {
-      'legName': 'Home to New York',
+      'legName': 'Barcelona Trip',
       'legStartDate': '10-Mar-2016',
       'legEndDate': '17-Mar-2016',
       'stages': [

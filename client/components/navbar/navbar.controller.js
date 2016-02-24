@@ -4,7 +4,7 @@ angular.module('hackathonApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',
-      'link': '/'
+      'link': '/myhome'
     },
     {
         'title': 'Timeline',

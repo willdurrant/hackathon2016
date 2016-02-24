@@ -1,27 +1,9 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<div class="col-md-12">
+<div class="col-md-12 static">
 
-  <!-- view -->
-<!--  <timeline>
-    <timeline-event ng-repeat="event in events" side="right">
-      <timeline-badge class="{{event.badgeClass}}">
-        <i class="glyphicon {{event.badgeIconClass}}"></i>
-      </timeline-badge>
-      <timeline-panel class="{{event.badgeClass}}">
-        <timeline-heading>
-          <h4>{{event.title}}</h4>
-        </timeline-heading>
-        <p>{{event.content}}</p>
-        <timeline-footer ng-if="event.footerContentHtml">
-          <span ng-bind-html="event.footerContentHtml"></span>
-        </timeline-footer>
-      </timeline-panel>
-    </timeline-event>
-  </timeline>-->
-
-  <h3>{{leg.legName}}</h3>
-  <h4>{{leg.legStartDate}} - {{leg.legEndDate}}</h4>
+  <h1>{{leg.legName}}</h1>
+  <h2>{{leg.legStartDate}} - {{leg.legEndDate}}</h2>
 
   <timeline>
     <timeline-event ng-repeat="stage in leg.stages" side="right">

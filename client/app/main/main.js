@@ -4,7 +4,7 @@ angular.module('hackathonApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('main', {
-        url: '/',
+        url: '/myhome',
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl'
       });
