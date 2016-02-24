@@ -3,13 +3,13 @@
 angular.module('hackathonApp')
   .config(function ($stateProvider) {
     $stateProvider
-      .state('intro', {
-        url: '/',
-        templateUrl: 'intro/intro.html',
-        controller: 'IntroCtrl'
-      })
+      //.state('intro', {
+      //  url: '/',
+      //  templateUrl: 'intro/intro.html',
+      //  controller: 'IntroCtrl'
+      //})
       .state('intro2', {
-        url: '/myintro2',
+        url: '/',
         templateUrl: 'intro/intro2.html',
         controller: 'IntroCtrl'
       })
