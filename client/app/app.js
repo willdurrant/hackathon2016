@@ -8,7 +8,8 @@ angular.module('hackathonApp', [
   'ui.bootstrap',
   'hackathonApp.services',
   'angular-timeline',
-  'angular-carousel'
+  'angular-carousel',
+  'ngNotificationsBar'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider

@@ -16,6 +16,7 @@
       <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
       <link rel="stylesheet" href="bower_components/angular-timeline/dist/angular-timeline.css" />
       <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet" href="bower_components/ng-notifications-bar/dist/ngNotificationsBar.min.css" />
       <!-- endbower -->
     <!-- endbuild -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -32,7 +33,7 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
+    <notifications-bar class="notifications"></notifications-bar>
     <!-- Add your site or application content here -->
     <div ui-view=""></div>
 
@@ -64,6 +65,7 @@
       <script src="bower_components/angular-timeline/dist/angular-timeline.js"></script>
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
       <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/ng-notifications-bar/dist/ngNotificationsBar.min.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
         <!-- build:js({.tmp,client}) app/app.js -->

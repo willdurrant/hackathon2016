@@ -1,9 +1,23 @@
 'use strict';
 
 angular.module('hackathonApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('MainCtrl', function ($scope, $http, notifications) {
     console.log('MainCtrl called..');
     $scope.awesomeThings = [];
+
+    $scope.showError = function () {
+      notifications.showError('Oops! Something bad just happened!');
+    };
+    $scope.showWarning = function () {
+      notifications.showWarning('Hey! Take a look <em>here</em>..');
+    };
+    $scope.showSuccess = function () {
+      notifications.showSuccess('Congrats! Life is great!');
+    };
+
+    $scope.closeAll = function () {
+      notifications.closeAll();
+    };
 
     $http.get('/api/things').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;

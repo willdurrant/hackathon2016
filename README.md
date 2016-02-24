@@ -18,6 +18,7 @@ Install
 * If using ```yo angular-fullstack:route``` make sure the url is different from the route name
 * When running ```grunt build``` this doesn't copy any new html templates over so you need to manually copy these over into the dist folder
 * To validate a ```grunt build``` you can run the app from the dist folder with the following and then navigate to http://localhost:8080/
+
     ```NODE_ENV=production node dist/server/app.js```
 
 ## Contributing
@@ -41,7 +42,7 @@ Install
 
     ```grunt serve:livereload```
 
-* Deployed application URL locally - http://localhost:9000/	
+* Deployed application URL locally - http://localhost:9000/
 	
 ## Build a release
 * From project root
