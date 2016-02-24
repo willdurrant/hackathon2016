@@ -18,11 +18,13 @@
       <!-- endbower -->
     <!-- endbuild -->
     <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
+    <link rel="stylesheet" href="app/font-awsesome.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- build:css({.tmp,client}) app/app.css -->
     <link rel="stylesheet" href="app/app.css">
       <!-- injector:css -->
       <link rel="stylesheet" href="app/app.css">
+      <link rel="stylesheet" href="app/font-awesome.css">
       <link rel="stylesheet" href="app/main/main.css">
       <link rel="stylesheet" href="components/modal/modal.css">
       <!-- endinjector -->
@@ -37,6 +39,13 @@
 
     <!-- Add your site or application content here -->
     <div ui-view=""></div>
+
+      <ul class="footerlinks">
+        <li><a><span class="fa fa-3 fa-plus-circle"></span>Add a task</a></li>
+        <li><a><span class="fa fa-3 fa-sun-o"></span>Destination</a></li>
+        <li><a><span class="fa fa-3 fa-phone"></span>Contact</a></li>
+      </ul>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
