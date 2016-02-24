@@ -1,11 +1,12 @@
 function startNotifications(interval, notifications, http) {
   $( document ).ready(function() {
     var notifs = null;
+    var newNotifs = null;
     var count = 0;
     notifications.showSuccess("Welcome to Amego");
     interval(function() {
       http.get('/api/alerts').success(function(alerts) {
-        notifs = alerts;
+        newNotifs = alerts;
       });
 
       if (notifs && notifs.length > 0) {
@@ -16,6 +17,7 @@ function startNotifications(interval, notifications, http) {
           }
         }
       }
+      notifs = newNotifs;
     }, 2000);
   });
 };
