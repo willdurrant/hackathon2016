@@ -1,9 +1,20 @@
 'use strict';
 
 angular.module('hackathonApp')
-  .controller('MainCtrl', function ($scope, $http, notifications) {
+  .controller('MainCtrl', function ($scope, $http, notifications, $interval) {
     console.log('MainCtrl called..');
     $scope.awesomeThings = [];
+
+    startNotifications($interval, notifications);
+
+    //$( document ).ready(function() {
+    //  var i = 1;
+    //  var sampleMessages = [ "First message", "Second message", "Third, now repeat" ];
+    //  $interval(function() {
+    //    var newText = sampleMessages[i++ % sampleMessages.length];
+    //    notifications.showSuccess(newText);
+    //  }, 3000);
+    //});
 
     //var notificationsObjArray = [{
     // 'level':1,
@@ -42,7 +53,7 @@ angular.module('hackathonApp')
     //
     //}
 
-    
+
 
     $scope.showError = function () {
       notifications.showError('Oops! Something bad just happened!');
