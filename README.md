@@ -27,6 +27,10 @@ Install
 * Clone this Github repo - https://github.com/willdurrant/hackathon2016
 
     ```git clone https://github.com/willdurrant/hackathon2016.git```
+    
+* Subsequent updates via git pull
+
+    ```git pull origin master```
 
 * Run npm & bower install at root of project
 

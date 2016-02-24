@@ -5,6 +5,45 @@ angular.module('hackathonApp')
     console.log('MainCtrl called..');
     $scope.awesomeThings = [];
 
+    //var notificationsObjArray = [{
+    // 'level':1,
+    //  'msg':'blah1111'
+    //},{
+    //  'level':2,
+    //  'msg':'blah1111'
+    //},{
+    //  'level':3,
+    //  'msg':'blah1111'
+    //},{
+    //  'level':1,
+    //  'msg':'blah1111'
+    //},{
+    //  'level':2,
+    //  'msg':'blah1111'
+    //},{
+    //  'level':3,
+    //  'msg':'blah1111'
+    //},{
+    //  'level':1,
+    //  'msg':'blah1111'
+    //},{
+    //  'level':2,
+    //  'msg':'blah1111'
+    //}];
+    //
+    //while(true) {
+    //
+    //  //every 30 secs generate random number 1-10
+    //  //access notificationsObjArray[randomNum]
+    //  // chosen notificationsObjArray.level == 1 {
+    //  notifications.showWarning(notificationsObjArray.msg)
+    //}
+    //
+    //
+    //}
+
+    
+
     $scope.showError = function () {
       notifications.showError('Oops! Something bad just happened!');
     };
