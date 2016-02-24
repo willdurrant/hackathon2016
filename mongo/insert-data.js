@@ -4,8 +4,8 @@ db = conn.getDB("hackathon-dev");
 //Alert
 db.alert.drop();
 
-db.insert({"level": "info", "msg": "Did you know you are entitled to use the lounge?"});
-db.insert({"level": "error", "msg": "Herd of wildebeest on the M25 between Jct 8 and Jct 9"});
+db.alert.insert({"uniqueId": 1, "level": "info", "msg": "Did you know you are entitled to use the lounge?"});
+db.alert.insert({"uniqueId": 2, "level": "error", "msg": "Herd of wildebeest on the M25 between Jct 8 and Jct 9"});
 
 //Stage
 db.stage.drop();
