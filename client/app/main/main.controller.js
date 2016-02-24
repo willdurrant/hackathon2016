@@ -5,6 +5,17 @@ angular.module('hackathonApp')
     console.log('MainCtrl called..');
     $scope.awesomeThings = [];
 
+    startNotifications($interval, notifications);
+
+    //$( document ).ready(function() {
+    //  var i = 1;
+    //  var sampleMessages = [ "First message", "Second message", "Third, now repeat" ];
+    //  $interval(function() {
+    //    var newText = sampleMessages[i++ % sampleMessages.length];
+    //    notifications.showSuccess(newText);
+    //  }, 3000);
+    //});
+
     //var notificationsObjArray = [{
     // 'level':1,
     //  'msg':'blah1111'
@@ -41,6 +52,7 @@ angular.module('hackathonApp')
     //
     //
     //}
+
 
 
     $scope.showError = function () {
