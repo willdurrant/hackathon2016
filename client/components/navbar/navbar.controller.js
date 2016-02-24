@@ -5,6 +5,10 @@ angular.module('hackathonApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
+    },
+    {
+        'title': 'Timeline',
+        'link': '/mytimeline'
     }];
 
     $scope.isCollapsed = true;
