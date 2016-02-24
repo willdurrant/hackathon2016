@@ -4,11 +4,13 @@
   "dependencies": {
     "angular": ">=1.2.*",
     "angular-bootstrap": "~0.11.0",
+    "angular-carousel": "~1.0.1",
     "angular-cookies": ">=1.2.*",
     "angular-resource": ">=1.2.*",
     "angular-sanitize": ">=1.2.*",
     "angular-timeline": "~1.6.2",
     "angular-ui-router": "~0.2.15",
+    "angular-touch": "~1.5.0",
     "bootstrap": "~3.1.1",
     "es5-shim": "~3.0.1",
     "font-awesome": ">=4.1.0",
