@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('hackathonApp')
-  .controller('MainCtrl', function ($scope, $http, notifications) {
+  .controller('MainCtrl', function ($scope, $http, notifications, $interval) {
     console.log('MainCtrl called..');
     $scope.awesomeThings = [];
 

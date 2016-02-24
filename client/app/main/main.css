@@ -230,3 +230,6 @@ ul[rn-carousel] li:before {
   margin-bottom: 20px;
 }
 
+.notifications .notifications-container {
+  margin-top:51px !important;
+}
