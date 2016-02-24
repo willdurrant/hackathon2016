@@ -1,5 +1,3 @@
 {
-  "proxy":"http://proxy-developer.aexp.com:8585",
-  "https-proxy":"http://proxy-developer.aexp.com:8585",
   "directory": "client/bower_components"
 }
