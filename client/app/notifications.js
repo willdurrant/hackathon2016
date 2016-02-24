@@ -1,13 +1,22 @@
-function startNotifications(interval, notifications) {
+function startNotifications(interval, notifications, http) {
   $( document ).ready(function() {
-    var i = 0;
-    var notifs = getNotifications();
-    displayNotification(notifs[i++ % notifs.length], notifications);
-    //notifications.closeAll();
+    var notifs = null;
+    var count = 0;
+    notifications.showSuccess("Welcome to Amego");
     interval(function() {
-      displayNotification(notifs[i % notifs.length], notifications);
-      i++;
-    }, 5000);
+      http.get('/api/alerts').success(function(alerts) {
+        notifs = alerts;
+      });
+
+      if (notifs && notifs.length > 0) {
+        for (var i = 0; i < notifs.length; i++) {
+          if (notifs[i].uniqueId > count) {
+            count = notifs[i].uniqueId;
+            displayNotification(notifs[i], notifications);
+          }
+        }
+      }
+    }, 2000);
   });
 };
 

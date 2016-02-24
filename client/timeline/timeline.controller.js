@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('hackathonApp')
-  .controller('TimelineCtrl', function ($scope, notifications, $interval) {
+  .controller('TimelineCtrl', function ($scope, notifications, $interval, $http) {
     console.log('TimelineCtrl called...');
     $scope.message = 'Hello';
 
-    startNotifications($interval, notifications);
+    startNotifications($interval, notifications, $http);
 
     var lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. " +
       "Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor." +
